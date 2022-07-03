@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  
+</head>
+<body class="bg-[#f26e6e] py-5">
+    <!-- <div class="header container mx-auto"><div class="w-16"><img src="assets/bac.jpg" class="w-full" /></div> </div> -->
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="w-full max-w-xl md:order-2"><img src="assets/bac.jpg" class="w-full"/></div>
+        <div class="sm-order-1 flex-1 flex flex-col justify-center text-center sm:text-left">
+        <div>
+            <div class=" sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center md:text-left font-Inter-Black">Building web3</div>
+            <div class=" sm:6xl md:text-7xl lg:text-8xl font-bold ">Ecosystem</div>
+        </div>
+            <div class="flex gap-2">
+                <a href="" class="w-10 bg-white p-2 rounded-3xl"><img src="assets/discard.svg" class="w-full"/></a>
+                <a href="" class="w-10 bg-white p-2 rounded-3xl"><img src="assets/Twitter.svg"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-10">
+        <h1 class="text-center  text-white text-3xl font-Poppins-Bold">Team</h1>
+        <div class="swiper w-full container px-10">
+            <div class="swiper-wrapper mb-4 mt-4">
+            <div class="swiper-slide flex flex-col items-center gap-2">
+                <div class="w-4/5 lg:w-[initial]"><img src="assets/team/mastermind/artist.jpg" class="w-full"/></div>   
+                <h2 class="font-Poppins-Regular">Artist: Cra</h2>
+            </div>
+            <div class="swiper-slide flex flex-col items-center gap-2">
+                <div class="w-4/5 lg:w-[initial]"><img src="assets/team/mastermind/blockchain.jpg" class="w-full"/></div> 
+                <h2 class="font-Poppins-Regular">mastermind/blockchain dev: diamond.hand</h2>    
+            </div>
+            <div class="swiper-slide flex flex-col items-center gap-2">
+                <div class="w-4/5 lg:w-[initial]"><img src="assets/team/mastermind/Prmanager.jpg" class="w-full"/></div>    
+                <h2 class="font-Poppins-Regular">Pr manager - bishoplzik</h2>   
+            </div>
+            <div class="swiper-slide flex flex-col items-center gap-2">
+                <div class="w-4/5 lg:w-[initial]"><img src="assets/team/mastermind/noname.jpg" class="w-full"/></div>       
+            </div>
+            </div>
+            <div class="swiper-pagination -mb-4 relative">
+            </div>
+          </div>
+    </div>
+    <div class="mt-10 container mx-auto w-4/5">
+        <h1 class="text-center text-white text-3xl mb-4 Poppins-Bold">Mint Info</h1>
+        <div class="flex text-center font-light justify-between font-Poppins-Regular">
+            <h1>SUPPLY: 4444</h1>
+            <h1>MINT DATE: JULY 12</h1>
+            <h1>PUBLIC PRICE 0.09 SOL</h1>
+            <h1>WL PRICE: 0.069 SOL</h1>
+            <h1>5 NFT PER WALLET</h1>
+        </div>
+    </div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    new Swiper('.swiper', {
+    // effect: 'coverflow',
+    // effect: 'flip',
+    zoom: {
+    maxRatio: 5,
+  },
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 70
+      }
+    }
+  });
+  </script>
+</body>
+</html>

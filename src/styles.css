@@ -1,0 +1,21 @@
+/* tailwindcss utitlity classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: local('Inter-Black'), url(./Fonts/Inter-Black.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: local('Inter-Bold'), url(./Fonts/Inter-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: local(''), url(./Fonts/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: local(''), url(./Fonts/Poppins-Regular.ttf) format('truetype');
+}
